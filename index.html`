@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="مجموعة رفقة نجاح للإعلانات الممولة والتسويق الرقمي والتجارة الإلكترونية وتطوير الأعمال.">
+<meta name="theme-color" content="#100817">
+<title>مجموعة رفقة نجاح | RIFQAT NAJAH GROUP</title>
+
+<style>
+:root {
+  --purple: #c026ff;
+  --purple-dark: #8b00d4;
+  --purple-light: #e7a6ff;
+  --purple-glow: #a600ff;
+  --black: #100817;
+  --panel: #1b1025;
+  --panel-light: #251332;
+  --white: #ffffff;
+  --muted: #d5c7df;
+  --border: rgba(192, 38, 255, .35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.9;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+/* رأس الموقع */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(16, 8, 23, .94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+}
+
+.navbar {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 12px 0;
+}
+
+.logo {
+  color: var(--purple-light);
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-shadow: 0 0 15px rgba(192, 38, 255, .3);
+}
+
+.logo small {
+  display: block;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 2px;
+  direction: ltr;
+  text-align: right;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+nav a {
+  color: #f7eaff;
+  font-size: 13px;
+  transition: .25s;
+}
+
+nav a:hover {
+  color: var(--purple-light);
+  text-shadow: 0 0 12px var(--purple);
+}
+
+/* الواجهة الرئيسية */
+.hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 25%, rgba(192, 38, 255, .28), transparent 55%),
+    radial-gradient(circle at 15% 80%, rgba(139, 0, 212, .16), transparent 35%),
+    linear-gradient(135deg, #1b0b2a, #08050d 75%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(192, 38, 255, .35);
+  border-radius: 20px;
+  pointer-events: none;
+  box-shadow: inset 0 0 30px rgba(166, 0, 255, .05);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid rgba(192, 38, 255, .12);
+  top: 50%;
+  left: -150px;
+  transform: translateY(-50%);
+  box-shadow:
+    0 0 0 25px rgba(192, 38, 255, .025),
+    0 0 0 50px rgba(192, 38, 255, .02);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid rgba(192, 38, 255, .75);
+  border-radius: 30px;
+  color: var(--purple-light);
+  background: rgba(192, 38, 255, .08);
+  font-size: 13px;
+  margin-bottom: 22px;
+  box-shadow: 0 0 20px rgba(192, 38, 255, .12);
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 60px);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.purple {
+  color: var(--purple-light);
+  text-shadow: 0 0 24px rgba(192, 38, 255, .4);
+}
+
+.hero p {
+  max-width: 730px;
+  margin: 0 auto 30px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: .25s;
+  cursor: pointer;
+}
+
+.btn-purple {
+  color: white;
+  background: linear-gradient(135deg, #d65aff, #8b00d4);
+  border: 1px solid #df8cff;
+  box-shadow: 0 0 22px rgba(166, 0, 255, .23);
+}
+
+.btn-outline {
+  border: 1px solid var(--purple);
+  color: var(--purple-light);
+  background: rgba(192, 38, 255, .04);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 28px rgba(192, 38, 255, .35);
+}
+
+/* الأقسام */
+section {
+  padding: 76px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-title h2 {
+  font-size: clamp(25px, 4vw, 36px);
+  margin-bottom: 8px;
+}
+
+.section-title p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: linear-gradient(90deg, #8b00d4, #e7a6ff);
+  border-radius: 5px;
+  box-shadow: 0 0 12px rgba(192, 38, 255, .6);
+}
+
+/* من نحن */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.card {
+  background: linear-gradient(145deg, #21122e, #140b1b);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .13);
+}
+
+.card h3 {
+  color: var(--purple-light);
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.values {
+  display: grid;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.value {
+  border-right: 3px solid var(--purple);
+  padding: 9px 13px;
+  background: rgba(192, 38, 255, .055);
+  border-radius: 5px 0 0 5px;
+}
+
+.value strong {
+  color: var(--purple-light);
+}
+
+/* الخدمات */
+.services-section {
+  background:
+    radial-gradient(ellipse at top, rgba(139, 0, 212, .1), transparent 65%),
+    #100817;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.service {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #21122e, #160c20);
+  border: 1px solid rgba(192, 38, 255, .22);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform .25s, border-color .25s, box-shadow .25s;
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 2px;
+  background: var(--purple);
+  box-shadow: 0 0 15px var(--purple);
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  border-color: var(--purple);
+  box-shadow: 0 10px 30px rgba(166, 0, 255, .13);
+}
+
+.service .icon {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.service h3 {
+  color: var(--purple-light);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.service p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* معرض الصور */
+.gallery-section {
+  background:
+    radial-gradient(ellipse at top, rgba(192, 38, 255, .12), transparent 65%),
+    #0d0613;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.gallery-card {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  background: #1b1025;
+  border: 1px solid rgba(192, 38, 255, .4);
+  border-radius: 15px;
+  color: white;
+  transition: transform .3s, border-color .3s, box-shadow .3s;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  border-color: #e7a6ff;
+  box-shadow: 0 10px 30px rgba(166, 0, 255, .2);
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform .4s;
+  background: #21122e;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-info {
+  padding: 16px;
+  background: linear-gradient(145deg, #21122e, #12091a);
+  border-top: 1px solid rgba(192, 38, 255, .28);
+}
+
+.gallery-info h3 {
+  color: var(--purple-light);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.gallery-info p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.gallery-contact {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.gallery-contact p {
+  color: var(--purple-light);
+  margin-bottom: 14px;
+}
+
+/* لماذا نحن */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.why-card {
+  text-align: center;
+  padding: 25px 18px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #21122e, #140b1b);
+  border: 1px solid rgba(192, 38, 255, .25);
+  transition: .25s;
+}
+
+.why-card:hover {
+  border-color: var(--purple);
+  transform: translateY(-4px);
+}
+
+.why-card strong {
+  display: block;
+  color: var(--purple-light);
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.why-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* الانضمام */
+.join-section {
+  background:
+    radial-gradient(ellipse at center, rgba(192, 38, 255, .14), transparent 65%),
+    #100817;
+}
+
+.join-box {
+  text-align: center;
+  border: 1px solid rgba(192, 38, 255, .5);
+  border-radius: 22px;
+  padding: 42px 22px;
+  background: linear-gradient(145deg, #21122e, #100817);
+  box-shadow: 0 0 35px rgba(166, 0, 255, .08);
+}
+
+.join-box h2 {
+  font-size: clamp(25px, 4vw, 35px);
+  margin-bottom: 12px;
+}
+
+.join-box p {
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto 22px;
+}
+
+/* التواصل */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.contact-card {
+  background: linear-gradient(145deg, #21122e, #160c20);
+  border: 1px solid rgba(192, 38, 255, .3);
+  border-radius: 16px;
+  padding: 25px;
+  transition: .25s;
+}
+
+.contact-card:hover {
+  border-color: var(--purple);
+  box-shadow: 0 0 20px rgba(192, 38, 255, .1);
+}
+
+.contact-card h3 {
+  color: var(--purple-light);
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  color: var(--muted);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.contact-link {
+  display: inline-block;
+  color: var(--purple-light);
+  border-bottom: 1px solid var(--purple);
+  padding-bottom: 3px;
+}
+
+/* التذييل */
+footer {
+  text-align: center;
+  padding: 30px 15px 95px;
+  border-top: 1px solid rgba(192, 38, 255, .3);
+  background: #09040e;
+}
+
+footer .footer-logo {
+  color: var(--purple-light);
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(192, 38, 255, .25);
+}
+
+footer p {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* زر واتساب البنفسجي */
+.whatsapp {
+  position: fixed;
+  bottom: 22px;
+  left: 18px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 21px;
+  border: 1px solid #e7a6ff;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #d65aff, #8b00d4);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 5px 25px rgba(166, 0, 255, .35);
+  transition: .25s;
+  animation: waFloat 3s ease-in-out infinite;
+}
+
+.whatsapp:hover {
+  box-shadow: 0 8px 30px rgba(192, 38, 255, .55);
+}
+
+.wa-icon {
+  width: 27px;
+  height: 27px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #170822;
+  color: #e7a6ff;
+  font-size: 17px;
+}
+
+@keyframes waFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 760px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .about-grid,
+  .services-grid,
+  .why-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .gallery-card img {
+    height: 160px;
+  }
+
+  .gallery-info {
+    padding: 12px;
+  }
+
+  .gallery-info h3 {
+    font-size: 15px;
+  }
+
+  .gallery-info p {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 510px;
+  }
+
+  section {
+    padding: 55px 0;
+  }
+
+  .card {
+    padding: 21px;
+  }
+  
+  .whatsapp {
+    padding: 8px 15px;
+    font-size: 12px;
+    bottom: 15px;
+    left: 10px;
+  }
+  
+  .wa-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card img {
+    height: 210px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="#home" class="logo">
+      مجموعة رفقة نجاح
+      <small>RIFQAT NAJAH GROUP</small>
+    </a>
+
+    <nav aria-label="القائمة الرئيسية">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#gallery">معرض الأعمال</a>
+      <a href="#join">انضم إلينا</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- الرئيسية -->
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <span class="badge">نصنع الفرص ونبني النجاح</span>
+
+    <h1>
+      مرحباً بكم في<br>
+      <span class="purple">مجموعة رفقة نجاح</span>
+    </h1>
+
+    <p>
+      نساعد الأفراد وأصحاب المشاريع والشركات على تطوير أعمالهم،
+      والوصول إلى عملائهم، وبناء حضور رقمي احترافي من خلال
+      التسويق والتصميم والتجارة الإلكترونية وتطوير الأعمال.
+    </p>
+
+    <div class="buttons">
+      <a href="#services" class="btn btn-purple">اكتشف خدماتنا</a>
+      <a href="#contact" class="btn btn-outline">تواصل معنا</a>
+    </div>
+  </div>
+</section>
+
+<!-- من نحن -->
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>من <span class="purple">نحن؟</span></h2>
+      <p>فكرتك تستحق فرصة، ومشروعك يستحق النجاح</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="card">
+        <h3>مجموعة رفقة نجاح</h3>
+        <p>
+          مجموعة تهدف إلى تقديم حلول عملية تساعد أصحاب المشاريع
+          ورواد الأعمال والمسوقين على تنمية أعمالهم والاستفادة
+          من الفرص الرقمية والتجارية. نعمل على ربط الأفكار
+          بالحلول، والخدمات بالعملاء، والطموح بخطوات عملية نحو النجاح.
+        </p>
+        <br>
+        <p>
+          نسعى إلى بناء علاقات مهنية قائمة على التعاون والوضوح
+          وتبادل الفرص، مع الاهتمام بجودة الخدمة والتطوير المستمر.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>رؤيتنا ورسالتنا</h3>
+        <div class="values">
+          <div class="value">
+            <strong>رؤيتنا</strong><br>
+            المساهمة في بناء مشاريع ناجحة ومستدامة.
+          </div>
+          <div class="value">
+            <strong>رسالتنا</strong><br>
+            تقديم خدمات وحلول تساعد العملاء على التطور.
+          </div>
+          <div class="value">
+            <strong>قيمنا</strong><br>
+            التعاون، الإبداع، الالتزام، والوضوح.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- الخدمات -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>خدمات <span class="purple">المجموعة</span></h2>
+      <p>حلول متنوعة لتطوير أعمالك ومشروعك</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service">
+        <div class="icon">📢</div>
+        <h3>التسويق الرقمي والإعلانات الممولة</h3>
+        <p>المساعدة في الترويج للمنتجات والخدمات والوصول إلى الجمهور المناسب.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">🌐</div>
+        <h3>تصميم المواقع</h3>
+        <p>إنشاء مواقع تعريفية وتجارية لعرض الخدمات والمنتجات بصورة احترافية.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">🛒</div>
+        <h3>التجارة الإلكترونية</h3>
+        <p>المساعدة في بناء المتاجر الإلكترونية وتنظيم عرض المنتجات.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">🎨</div>
+        <h3>التصميم والهوية البصرية</h3>
+        <p>تصميم المواد الإعلانية والمساعدة في بناء هوية مميزة للمشاريع.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">📱</div>
+        <h3>إدارة صفحات التواصل</h3>
+        <p>تنظيم المحتوى وتجهيز المنشورات وتطوير الحضور الرقمي للمشاريع.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">🤝</div>
+        <h3>التسويق بالعمولة</h3>
+        <p>دعم التعاون بين أصحاب المنتجات والمسوقين وفق اتفاق واضح.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">📦</div>
+        <h3>ترويج المنتجات</h3>
+        <p>عرض المنتجات وإعداد محتوى تسويقي يساعد العملاء على فهمها.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">🏢</div>
+        <h3>الوساطة التجارية</h3>
+        <p>المساعدة في التواصل بين أصحاب الأعمال والموردين والعملاء.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">💡</div>
+        <h3>استشارات المشاريع</h3>
+        <p>ترتيب أفكار المشاريع وتحديد الجمهور وخطوات البدء والتطوير.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">✍️</div>
+        <h3>كتابة المحتوى الإعلاني</h3>
+        <p>إعداد نصوص إعلانية ومنشورات تناسب المنتج والجمهور المستهدف.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">📈</div>
+        <h3>تطوير الأعمال</h3>
+        <p>البحث عن فرص التعاون وتطوير العلاقات بين المشاريع والعملاء.</p>
+      </article>
+
+      <article class="service">
+        <div class="icon">🌍</div>
+        <h3>التعاون التجاري بين الدول</h3>
+        <p>بناء علاقات تعاون تجاري ورقمي بين المشاريع والأسواق المستهدفة.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- معرض الأعمال -->
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>معرض <span class="purple">أعمالنا</span></h2>
+      <p>أفكار في التسويق والتصميم والتجارة الإلكترونية</p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <a class="gallery-card" href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="تحليل بيانات التسويق الرقمي" loading="lazy">
+        <div class="gallery-info">
+          <h3>التسويق الرقمي</h3>
+          <p>أفكار لتنمية الأعمال عبر الإنترنت</p>
+        </div>
+      </a>
+
+      <a class="gallery-card" href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="حاسوب ومساحة عمل تقنية" loading="lazy">
+        <div class="gallery-info">
+          <h3>تصميم المواقع</h3>
+          <p>واجهات رقمية للمشاريع والشركات</p>
+        </div>
+      </a>
+
+      <a class="gallery-card" href="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=85" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80" alt="أحذية وإكسسوارات معروضة للبيع" loading="lazy">
+        <div class="gallery-info">
+          <h3>عرض المنتجات</h3>
+          <p>منتجات وإكسسوارات للتجارة الإلكترونية</p>
+        </div>
+      </a>
+
+      <a class="gallery-card" href="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=700&q=80" alt="التجارة الإلكترونية والدفع" loading="lazy">
+        <div class="gallery-info">
+          <h3>التجارة الإلكترونية</h3>
+          <p>حلول البيع والشراء عبر الإنترنت</p>
+        </div>
+      </a>
+
+      <a class="gallery-card" href="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=85" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=700&q=80" alt="أدوات التصميم الإبداعي" loading="lazy">
+        <div class="gallery-info">
+          <h3>التصميم الإبداعي</h3>
+          <p>أفكار بصرية ومشاريع تصميم</p>
+        </div>
+      </a>
+
+      <a class="gallery-card" href="https://images.unsplash.com/photo-1461773518188-b3e86f98242f?auto=format&fit=crop&w=1200&q=85" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1461773518188-b3e86f98242f?auto=format&fit=crop&w=700&q=80" alt="مساحة عمل ومكتب" loading="lazy">
+        <div class="gallery-info">
+          <h3>تطوير الأعمال</h3>
+          <p>التخطيط والعمل على أفكار جديدة</p>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="gallery-contact">
+      <p>هل تريد عرض مشروعك أو منتجاتك معنا؟</p>
+      <a class="btn btn-purple" href="https://wa.m
